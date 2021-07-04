@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Basics</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #000;
+    }
+    .container {
+      padding: 30px;
+      max-width: 600px;
+      border: 1px solid #000;
+      margin: 40px auto;
+      background-color: #fff ;
+      line-height: 1.8em;
+      height: auto;
+    }
+    #writeText input {
+      width: 100%;
+      margin-bottom: 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      font-size: 20px;
+    }
+    #addTaskButton input {
+      width: 25%;
+      height: 30px;
+      color : #000;
+      background-color: #5ac18e;
+      margin-bottom: 20px;
+    }
+    #addTaskButton input:hover {
+      background-color: #8bd3af;
+    }
+    #addTaskButton input:active {
+      height: 35px;
+      margin-bottom: 15px;
+    }
+    hr {
+      margin-bottom: 20px;
+    }
+    table{
+      border: 1px solid #000;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    table tr {
+      padding: 10px;
+    }
+
+    /* tr.tableRow td.listData {
+      border: 1px solid #000;
+      width: 90%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      padding: 10px;
+    }
+    tr.tableRow td.crossButton{
+      border: 1px solid #000;
+      text-align: center;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+    }
+    tr.tableRow td.crossButton input {
+      background-color: white;
+      border: none;
+      font-size: 30px;
+      color: red;
+    }
+    tr.tableRow td.crossButton input:hover {
+      background-color: red;
+      color: #fff;
+    }
+    tr.tableRow td.crossButton input:active {
+      padding: 5px 10px;
+    } */
+    div input#clearTasks {
+      height: 30px;
+      width: 25%;
+      background-color: #000;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    div input#clearTasks:hover {
+      background-color: #374053;
+    }
+    div input#clearTasks:active {
+      height: 35px;
+      margin-bottom: 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="headings">
+      <h2>Task List</h2>
+      <p>New Task</p>
+    </div>
+    <div id="writeText">
+      <input type="text" name="writeText" id="text" placeholder="Input Items">
+    </div>
+    <div id="addTaskButton">
+      <input type="button" value="ADD TASK">
+    </div>
+    <hr>
+    <div id="addedTasks">
+      <h3>Tasks</h3>
+      <div id="taskList">
+        <table>
+          <tr class="tableRow" id="row1">
+            <td class="listData" id="item1">List Items</td>
+            <td class="crossButton" id="cross1"><input type="button" value="X"></td>
+          </tr>
+          <tr class="tableRow" id="row2">
+            <td class="listData" id="item2">List Items</td>
+            <td class="crossButton" id="cross2"><input type="button" value="X"></td>
+          </tr>
+          <tr class="tableRow" id="row3">
+            <td class="listData" id="item3">List Items</td>
+            <td class="crossButton" id="cross3"><input type="button" value="X"></td>
+          </tr>
+          <tr class="tableRow" id="row4">
+            <td class="listData" id="item4">List Items</td>
+            <td class="crossButton" id="cross4"><input type="button" value="X"></td>
+          </tr>
+          <tr class="tableRow" id="row5">
+            <td class="listData" id="item5">List Items</td>
+            <td class="crossButton" id="cross5"><input type="button" value="X"></td>
+          </tr>
+        </table>
+      </div>
+      <div ><input type="button" value="Clear Tasks" id="clearTasks"></div>
+    </div>
+  </div>
+  <script src="dom.js"></script>
+</body>
+
+</html>
